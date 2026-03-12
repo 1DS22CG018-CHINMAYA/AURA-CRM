@@ -1,0 +1,65 @@
+/*
+ * Tailwind CSS v4 — all configuration lives HERE (no tailwind.config.js needed).
+ *
+ * @import "tailwindcss" is the v4 replacement for the three v3 @tailwind directives.
+ * @theme defines our custom design tokens (colors, fonts) that become Tailwind utilities.
+ */
+
+@import "tailwindcss";
+
+@theme {
+  /* ── Custom color palette ───────────────────────────────────────────────── */
+  --color-background: #05050f;
+  --color-surface: #0c0c1d;
+  --color-surface-2: #13132b;
+  --color-border: #1f1f3d;
+
+  /* ── Typography ─────────────────────────────────────────────────────────── */
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* ── Base resets ─────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #05050f;
+  color: #f1f5f9;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* ── Slim custom scrollbar ───────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f3d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d54;
+}
+
+/* ── Text selection ──────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(124, 58, 237, 0.3);
+  color: #e2e8f0;
+}
