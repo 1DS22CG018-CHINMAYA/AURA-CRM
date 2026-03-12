@@ -91,7 +91,7 @@ Before running Aura locally, ensure you have the following:
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/your-username/aura-crm.git
+git clone https://github.com/1DS22CG018-CHINMAYA/AURA-CRM.git
 cd aura-crm
 ```
 
